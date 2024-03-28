@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <title>Varghese_shiyon_music_mixer</title>
+</head>
+<body>
+
+        <h1>Melody Mania</h1>
+    
+    <div id="container" class="droppable">
+        <div class="svg draggable" data-audio="assets/cymbal.mp3"> <img src="images/cymbals.svg" data-original-container="#container"></div>
+        <div class="svg draggable" data-audio="assets/drum.mp3"> <img src="images/drums.svg" data-original-container="#container"></div>
+        <div class="svg draggable" data-audio="assets/guitar.mp3"> <img src="images/electric.svg" data-original-container="#container"></div>
+        <div class="svg draggable" data-audio="assets/flute.mp3"> <img src="images/flute.svg" data-original-container="#container"></div>
+        <div class="svg draggable" data-audio="assets/harp.mp3"> <img src="images/harp.svg" data-original-container="#container"></div>
+        <div class="svg draggable" data-audio="assets/trumpet.mp3"> <img src="images/trumpet.svg" data-original-container="#container"></div>
+    </div>
+    
+
+    <div class="container droppable">
+        <div class="box-1 droppable" >
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+            <div class="placeholder"></div>
+        </div>
+    </div>
+
+    <button id="resetButton" onclick="resetDraggedElements()">Reset</button>
+    <div id="image-container">
+        <!-- Dragged images will be displayed here -->
+    </div>
+
+    <audio id="audio" loop></audio>
+    <script src="./js/main.js"></script>
+</body>
+</html>

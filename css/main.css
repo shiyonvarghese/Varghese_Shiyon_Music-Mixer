@@ -1,0 +1,96 @@
+div img {
+    width: 120px;
+    height: 150px;
+}
+
+body {
+    background-image: url('../images/background.jpg'); /* Adjusted path */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /* Changed to cover for better background image scaling */
+}
+
+h1 {
+    color: rgb(66, 156, 156); /* Teal color */
+    text-align: center; /* Center-align the text */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+    font-size: 3.5rem; /* Adjusted font size */
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow for depth */
+}
+
+
+#container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-top: 15vh; /* Adjusted margin for better vertical positioning */
+}
+
+.svg {
+    width: 150px;
+    height: 150px; /* Adjusted height to maintain aspect ratio */
+    background-color: #1D3250;
+    padding: 20px;
+    text-align: center;
+    margin: 50px; /* Adjusted margin for better spacing */
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    border-width: 20px;
+}
+
+.box-1 {
+    border-radius: 40px;
+    margin-left: 15%;
+    width: 90%;
+    max-width: 70%; /* Limit maximum width */
+    height: 350px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(178, 199, 227, 0.2); /* Adjusted background color with transparency */
+    margin-top: 50px; /* Adjusted margin for better spacing */
+}
+
+.placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #464549;
+    border: 1px dashed #000;
+    margin-right: 20px; /* Adjusted margin for better spacing */
+    margin-bottom: 20px; /* Add margin bottom for spacing between rows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+}
+
+.placeholder:last-child {
+    margin-right: 0; /* Remove right margin for the last placeholder */
+}
+
+body {
+    text-align: center; /* Center align all content horizontally */
+}
+
+#resetButton {
+    margin: 30px auto;
+    width: 80%; /* Set width to adjust for smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    border-radius: 15px;
+    height: 50px;
+    font-size: large;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    border: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#resetButton:hover {
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+}
